@@ -1,0 +1,28 @@
+server:
+  address: ":8080"
+  read_timeout: 5s
+  write_timeout: 5s
+
+mysql:
+  host: 127.0.0.1
+  port: 3306
+  user: "root"
+  password: "020215"
+  dbname: "urlshortener"
+  max_open_conns: 200
+  max_idle_conns: 50
+
+redis:
+  host: 127.0.0.1
+  port: 6379
+  password: ""
+  db: 6
+  pool_size: 100
+
+shortcode:
+  min_length: 6
+
+app:
+  base_url: "http://localhost:8080"
+  cleanup_interval: 1h
+  default_expiration: 24h
